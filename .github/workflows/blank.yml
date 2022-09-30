@@ -32,7 +32,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          docker-compose up -d --build
+          #docker-compose up -d --build
           echo Add other actions to build,
           echo test, and deploy your project.
 
@@ -43,7 +43,7 @@ jobs:
           username: iqkhan70
           password: UthmanBasima$70
 
-      -name:
+      -name: Run Hello World
         run: |
         docker run hello-world
       
