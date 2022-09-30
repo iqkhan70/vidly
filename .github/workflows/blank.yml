@@ -43,7 +43,7 @@ jobs:
           username: iqkhan70
           password: UthmanBasima$70
 
-      -name: Run Hello World
+      - name: Run Hello World
         run: |
         docker run hello-world
       
