@@ -43,8 +43,10 @@ jobs:
           username: iqkhan70
           password: UthmanBasima$70
 
-      - name: Push App and run docker-compose
-        run: |
-          docker push iqkhan70/vidly
-          docker-compose up -d
-      
+      -
+        name: Build and push
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          push: true
+          tags: iqkhan70/vidly:latest, iqkhan/vidly:${{github.run_number}}
