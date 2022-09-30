@@ -42,6 +42,10 @@ jobs:
         with:
           username: iqkhan70
           password: UthmanBasima$70
+      
+      before_script:
+        - docker version
+        - docker-compose version
 
       -
         name: Build and push
