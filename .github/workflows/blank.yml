@@ -43,7 +43,8 @@ jobs:
           username: iqkhan70
           password: UthmanBasima$70
 
-      - name: Run Hello World
+      - name: Push App and run docker-compose
         run: |
-          docker run hello-world
+          docker push iqkhan70/vidly
+          docker-compose up -d
       
