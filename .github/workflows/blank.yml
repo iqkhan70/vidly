@@ -46,5 +46,5 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v2
         with:
-          push: true
-          tags: iqkhan70/vidly
+          image: iqkhan70/vidly
+          registry: docker.io
