@@ -45,5 +45,5 @@ jobs:
 
       - name: Run Hello World
         run: |
-        docker run hello-world
+          docker run hello-world
       
