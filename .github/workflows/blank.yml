@@ -47,7 +47,7 @@ jobs:
         name: Publish to Docker Hub
         uses: docker/build-push-action@v1
         with:
-          context: .
+          context: ./frontend/.
           push: true
           repository: iqkhan70/vidly
           tags: latest, ${{github.run_number}}
