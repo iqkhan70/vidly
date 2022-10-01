@@ -50,4 +50,4 @@ jobs:
           context: ./frontend/.
           push: true
           repository: iqkhan70/vidly
-          tags: latest, ${{github.run_number}}
+          tags: iqkhan/vidly:latest, ${{github.run_number}}
