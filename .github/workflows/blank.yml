@@ -27,17 +27,14 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: |
-          echo Hello, world!
-          pwd
-          ls -al
-
+        run: echo Hello, world!
+          
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          #docker-compose up -d --build
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          docker-compose up -d --build
+          pwd
+          ls -al
 
       -
         name: Login to DockerHub
@@ -46,11 +43,11 @@ jobs:
           username: iqkhan70
           password: UthmanBasima$70
       
-      -
-        name: Publish to Docker Hub
-        uses: docker/build-push-action@v1
-        with:
-          context: .
-          push: true
-          repository: iqkhan70/vidly
-          tags: latest, ${{github.run_number}}
+      # -
+      #   name: Publish to Docker Hub
+      #   uses: docker/build-push-action@v2
+      #   with:
+      #     context: .
+      #     push: true
+      #     repository: iqkhan70/vidly
+      #     tags: latest, ${{github.run_number}}
